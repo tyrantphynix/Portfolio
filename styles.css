@@ -131,3 +131,71 @@ header .container.handburger-menu .handburger span {
     margin: 0.20rem 0;
 }
 
+/* ----------- header styling ----------- */
+
+/* hero section styling */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to right, #8f94fb, #4a54c8);
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+}
+
+.hero-section .container .title {
+    font-size: 20vw;
+    font-weight: 400;
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    line-height: 0.9;
+}
+
+.hero-section .container .post {
+    font-size: 2rem;
+    color: var(--white-color);
+    text-align: center;
+    margin-top: 1rem;
+    font-family: var(--secondary-font);
+}
+
+.hero-section .container .particles .rectangle {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(226, 219, 219, 0.5);
+    box-shadow: 9px 29x 13px rgba(41, 40, 40, 0.2);
+    border-radius: 6px;
+    position: absolute;
+    top: 10vw;
+    left: 44vw;
+    z-index: 1;
+    transform: rotate(45deg);
+}
+
+.hero-section .container .particles .rectangle._0 {
+    top: 15vh;
+    left: 19vw;
+}
+
+.hero-section .container .particles .rectangle._1 {
+    top: 30vh;
+    left: 76vw;
+    transform: scale(0.8) rotate(20deg);
+}
+
+.hero-section .container .particles .rectangle._2 {
+    top: 75vh;
+    left: 94vw;
+}
+
+.hero-section .container .particles .rectangle._3 {
+    top: 73vh;
+    left: 3vw;
+    transform: scale(0.7) rotate(20deg);
+}
+
+/* ----------- header styling ----------- */
