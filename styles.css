@@ -55,80 +55,79 @@ header {
     position: fixed;
     width: 100%;
     background-color: #007bff;
-
-    .container{
-        width: 80%;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        padding: 1rem 0;
-        position: relative;
-
-        nav{
-            border-radius: 0.2rem;
-            position: absolute;
-            right: 0;
-            top: 6vh;
-            /* background-color: #ffe600; */
-
-            ul{
-                display: flex;
-                flex-direction: column;
-                align-content: center;
-                color: var(--black-color);
-                background-color: var(--white-color);
-                width: 150px;
-                height: 120px;
-                overflow: initial;
-                opacity: 1;
-                border-radius: 0.2rem;
-                transition: all 0.4s ease-out;
-
-                li{
-                    padding: 1rem 2rem;
-                    text-align: center;
-                    a{
-                        font-weight: 500;
-                        &:hover{
-                            color: var(--primary-color)
-                        }
-                    };
-                }
-
-                ul.show{
-                    height: 0;
-                    overflow: hidden;
-                    opacity: 0;
-                }
-            }
-        }
-
-        &.handburger-menu{
-            display: flex;
-            gap: 0.7rem;
-            cursor: pointer;
-            font-size: 1.5rem;
-            color: var(--white-color);
-
-            .handburger{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                cursor: pointer;
-                position: relative;
-
-                span{
-                    display: block;
-                    width: 1.5rem;
-                    height: 2px;
-                    background-color: var(--borer-color);
-                    margin: 0.20rem 0;
-                }
-            }
-        }
-    }
 }
 
+header .container {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem 0;
+    position: relative;
+}
 
+header .container nav {
+    border-radius: 0.2rem;
+    position: absolute;
+    right: 0;
+    top: 6vh;
+    /* background-color: #ffe600; */
+}
 
-/* ----------- header styling ----------- */
+header .container nav ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    width: 150px;
+    height: 120px;
+    overflow: initial;
+    opacity: 1;
+    border-radius: 0.2rem;
+    transition: all 0.4s ease-out;
+}
+
+header .container nav ul li {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header .container nav ul li a {
+    font-weight: 500;
+}
+
+header .container nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+header .container nav ul.show {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+header .container.handburger-menu {
+    display: flex;
+    gap: 0.7rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+header .container.handburger-menu .handburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+header .container.handburger-menu .handburger span {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: var(--borer-color);
+    margin: 0.20rem 0;
+}
+
