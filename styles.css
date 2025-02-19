@@ -328,3 +328,59 @@ header .container.handburger-menu .handburger span {
     background-size: cover;
 }
 /* ------------ about me styling ------------- */
+
+/* footer styling */
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0rem 3rem;
+}
+
+#footer .container{
+    width: 100%;
+    padding: 10rem 0;
+    border-top: 1px solid var(--black-color);
+    border-bottom: 1px solid var(--black-color);
+}
+
+#footer .container .flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .container .flex .left h1{
+    font-size: 6vw;
+    color: var(--black-color);
+}
+
+#footer .container .flex .left button{
+    padding: 1rem 4rem;
+    font-size: 1vw;
+    font-family: var(--primary-font);
+    border: transparent;
+    cursor: pointer;
+}
+
+#footer .container .flex .left button:hover{
+    background-color: #faa307;
+    color: var(--white-color);
+}
+
+#footer .container .flex .right h3{
+    font-size: 2vw;
+    color: var(--black-color);
+}
+
+#footer .container .flex .right h3:hover{
+    color: #faa307;
+}
+
+#footer p{
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+/* ------------ footer styling ------------- */
