@@ -296,3 +296,35 @@ header .container.handburger-menu .handburger span {
     
 }
 /* ------------ ido styling ------------- */
+
+/* about me styling */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .container{
+    padding: 5rem 3rem;
+    width: 40%;
+}
+
+#about .container .p{
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#about .parallax{
+    background-image: url('/assets/img_9.jpg');
+    height: 50vh;
+    width: 100%;
+    /* create parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ------------ about me styling ------------- */
