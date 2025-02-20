@@ -1,6 +1,14 @@
+/** ----------- Navigation menu ------------ */
+
+const handburgerMenu = document.querySelector(".handburger");
+const navlist = document.querySelector(".nav-list");
+
+handburgerMenu.addEventListener("click", () => {
+    navlist.classList.toggle("show");
+});
 
 
-
+/** ----------- /Navigation menu ------------ */
 
 /** ----------- GSAP ANIMATION ------------ */
 
@@ -36,3 +44,20 @@ gsap.to(".hero-section", {
         pin: true
     }
 })
+
+/** ----------- hero animation ------------ */
+
+/** ----------- lenis scrolling animation ------------ */
+
+const lenis = new Lenis({
+    duration : 3,
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+/** ----------- /lenis scrolling animation ------------ */

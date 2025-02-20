@@ -113,7 +113,7 @@ header .container nav ul.show {
     opacity: 0;
 }
 
-header .container.handburger-menu {
+header .container .handburger-menu {
     display: flex;
     gap: 0.7rem;
     cursor: pointer;
@@ -121,7 +121,7 @@ header .container.handburger-menu {
     color: var(--white-color);
 }
 
-header .container.handburger-menu .handburger {
+header .container .handburger-menu .handburger {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,7 +129,7 @@ header .container.handburger-menu .handburger {
     position: relative;
 }
 
-header .container.handburger-menu .handburger span {
+header .container .handburger-menu .handburger span {
     display: block;
     width: 1.5rem;
     height: 2px;
