@@ -159,6 +159,18 @@ header .container.handburger-menu .handburger span {
     font-family: var(--secondary-font);
     font-style: normal;
     line-height: 0.9;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-section .container .title .firstname{
+    display: flex;
+}
+
+.hero-section .container .title .lastname{
+    display: flex;
 }
 
 .hero-section .container .post {
