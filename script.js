@@ -80,3 +80,22 @@ gsap.to(horizontalSection, {
 })
 
 /** ----------- /Feature Work Section ------------ */
+
+/** ----------- About me ------------ */
+
+let textElement = gsap.utils.toArray(".text");
+
+textElement.forEach(text => {
+    gsap.to(text, {
+        backgroundSize: "100%",
+        ease: "none",
+        scrollTrigger: {
+            trigger: text,
+            start : "center 80%",
+            end : "center 30%", // expand the scroll width by 2000px
+            scrub: true,
+        }
+    })
+})
+
+/** ----------- /About me ------------ */
