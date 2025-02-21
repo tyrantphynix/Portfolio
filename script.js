@@ -39,7 +39,7 @@ gsap.to(".hero-section", {
     scrollTrigger: {
         trigger: ".hero-section",
         start : "top top",
-        end : "+=800px top", // expand the scroll height by 400px
+        end : "+=800px top", // expand the scroll height by 800px
         scrub: 2,
         pin: true
     }
@@ -61,3 +61,22 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 /** ----------- /lenis scrolling animation ------------ */
+
+/** ----------- Feature Work Section ------------ */
+
+let horizontalSection = document.querySelector('.horizontal');
+
+gsap.to(horizontalSection, {
+    x : () => horizontalSection.scrollWidth * -1,
+    xpercent: 100,
+    scrollTrigger: {
+        trigger: horizontalSection,
+        start : "center center",
+        end : "+=2000px ", // expand the scroll width by 2000px
+        scrub: 2,
+        pin: "#horizontal-scroll",
+        invalidateOnRefresh: true
+    }
+})
+
+/** ----------- /Feature Work Section ------------ */
