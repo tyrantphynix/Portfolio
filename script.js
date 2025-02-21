@@ -92,10 +92,24 @@ textElement.forEach(text => {
         scrollTrigger: {
             trigger: text,
             start : "center 80%",
-            end : "center 30%", // expand the scroll width by 2000px
+            end : "center 30%",
             scrub: true,
         }
     })
+})
+
+const parallax = document.querySelector(".parallax");
+
+gsap.to(parallax, {
+    backgroundPosition: '0px 100%',
+    ease: "none",
+    duration : 4,
+    scrollTrigger: {
+        trigger: parallax,
+        start : "-60% top",
+        end : "bottom bottom",
+        scrub: true,
+    }
 })
 
 /** ----------- /About me ------------ */
