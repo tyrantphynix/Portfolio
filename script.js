@@ -113,3 +113,18 @@ gsap.to(parallax, {
 })
 
 /** ----------- /About me ------------ */
+
+/** ----------- Footer ------------ */
+
+gsap.to("#footer .container .flex .left .wrapper h1", {
+    y: 0,
+    duration: 4,
+    scrollTrigger: {
+        trigger: '#footer .container .flex .left .wrapper h1',
+        start : "top 60%",
+        end : "bottom 60%",
+        scrub: 4,
+    }
+})
+
+/** ----------- /Footer ------------ */

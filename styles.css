@@ -4,7 +4,7 @@
 /* CSS Variables */
 :root{
     --primary-color : #86C232;
-    --borer-color : #f0dddd;
+    --boder-color : #f0dddd;
     --black-color : #2b2d42;
     --white-color : #f6f3f3e3;
     --primary-font : 'Poppins', sans-serif;
@@ -133,7 +133,7 @@ header .container .handburger-menu .handburger span {
     display: block;
     width: 1.5rem;
     height: 2px;
-    background-color: var(--borer-color);
+    background-color: var(--boder-color);
     margin: 0.20rem 0;
 }
 
@@ -388,6 +388,16 @@ header .container .handburger-menu .handburger span {
 #footer .container .flex{
     display: flex;
     justify-content: space-between;
+}
+
+#footer .container .flex .left .wrapper{
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+#footer .container .flex .left .wrapper h1{
+    line-height: 100px;
+    transform: translateY(-150px);
 }
 
 #footer .container .flex .left h1{
